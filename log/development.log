@@ -6,3 +6,22 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 16ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3663)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-08 09:57:11 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 5765)
+Completed 200 OK in 24ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 8348)
+
+
+Started GET "/packs/js/application-f826770d917d8a37c1d8.js" for 127.0.0.1 at 2021-03-08 09:57:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-f826770d917d8a37c1d8.js"):
+  
+Started GET "/packs/js/application-f826770d917d8a37c1d8.js" for 127.0.0.1 at 2021-03-08 09:57:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-f826770d917d8a37c1d8.js"):
+  
