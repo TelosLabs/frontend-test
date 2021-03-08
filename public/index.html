@@ -1,26 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="./index.js" defer></script>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <title>TEESH</title>
-</head>
-<body>
+  </head>
+  <body>
     <main id="main-content">
-        <section id="hero">
-            <p>Hero</p>
-            <!-- <img src="./img/teacup-top(png).png" alt="teacup, book and herbs from a top view"> -->
-        </section>
-        <section id="ad-copy">
-            <p>ad-copy</p>
-        </section>
-        <section id="cta">
-            <p>cta</p>
-        </section>
+      <section id="hero">
+        <div>
+          <h1>Fulfill your most peculiar tea wishes.</h1>
+          <p>
+            From a common black tea to the rarest Da Hong Pao, each of them
+            delivered right at your door
+          </p>
+          <button class="capitalize">signup</button>
+        </div>
+        <div>
+          <!-- Uncomment img when its time to fine tune the layout -->
+          <!--
+          <img
+            src="./img/teacup-top(png).png"
+            alt="teacup, book and herbs from a top view"
+            class="hero-image"
+          />
+            -->
+        </div>
+      </section>
+      <section id="ad-copy">
+        <h2 class="capitalize text-center">why us</h2>
+        <article class="ad-copy-article">
+          <h3 class="capitalize">home delivery</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+            quisquam veniam! Eos laborum rem possimus, fugit totam minima
+            voluptate facilis nihil harum saepe similique, cum dolore sapiente
+            dicta quisquam libero.
+          </p>
+        </article>
+        <article class="ad-copy-article">
+          <h3 class="capitalize">tea personalization</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+            quisquam veniam! Eos laborum rem possimus, fugit totam minima
+            voluptate facilis nihil harum saepe similique, cum dolore sapiente
+            dicta quisquam libero.
+          </p>
+        </article>
+        <article class="ad-copy-article">
+          <h3 class="capitalize">premium quality</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+            quisquam veniam! Eos laborum rem possimus, fugit totam minima
+            voluptate facilis nihil harum saepe similique, cum dolore sapiente
+            dicta quisquam libero.
+          </p>
+        </article>
+      </section>
+      <!-- TODO: Play with the grid, see if it can be generalized to all sections -->
+      <section id="cta" class="grid-container">
+        <div class="grid-cell">
+          <h2 class="uppercase">sign up</h3>
+          <h3>
+            Get the best tea experience you'll ever taste right at your door
+            each month
+          </h3>
+          <button class="capitalize">signup</button>
+        </div>
+        <div class="grid-cell">
+            <picture>
+                <source media="(min-width:900px)" type="image/jpeg" srcset="./img/cup-and-kettle(XL,L).jpg">
+                <img src="./img/cup-and-kettle(M,SM,XS).jpg" alt="cup and kettle">
+            </picture>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

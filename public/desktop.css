@@ -1,0 +1,17 @@
+/* styles for wide screen devices */
+h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+  /* identical to box height, or 125% */
+  color: #ffffff;
+}
+
+/* mobile h3 */
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+  color: #ffffff;
+}

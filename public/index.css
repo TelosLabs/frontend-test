@@ -1,4 +1,50 @@
-/* test color css import */
-.blue {
-    background-color: blue;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); /* roboto font from google cdn*/
+@import url("text-utility.css"); /* utility text classes */
+/* conditional styles */
+@import url("desktop.css") (min-width:376px);
+@import url("mobile.css");
+
+
+/*
+Content of the hero, sections and CTA should NOT be wider than 1312px (except for images on the CTA and bg colors)
+pad the remainder, design with 1312px as upper limit
+*/
+
+/* font defaults */
+body {
+  font-family: Roboto;
+  font-style: normal;
 }
+
+#hero {
+  background-color: #0b1113;
+}
+
+#cta {
+  background-color: #495664;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #c4c4c4;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+
