@@ -3,6 +3,17 @@ body {
   text-align: center;
 }
 
-.top-bar {
-  display: inline-flex;
+.grid-container {
+    display: grid;
+}
+
+.top-bar-header {
+  text-align: left;
+  /*
+  position: absolute;
+  width: 77px;
+  height: 36px;
+  left: 18px;
+  top: 18px;
+  */
 }

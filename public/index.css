@@ -1,5 +1,4 @@
 /* We do mobile-first with progressive enhancement as opposed to graceful degradation */
-@import url("utility.css"); /* utility text classes */
 @import url("typography.css");
 @import url("layout.css");
 /*
@@ -8,8 +7,6 @@ pad the remainder, design with 1312px as upper limit
 */
 
 :root {
-  --text-light: #ffffff;
-  --text-dark: #000000;
   --elipse-color: #24404f;
   --hero-color: #0b1113;
   --cta-color: #495664;
@@ -18,8 +15,8 @@ pad the remainder, design with 1312px as upper limit
 /* the ball thing */
 .elipse {
   background: var(--elipse-color);
-  width: 100px;
-  height: 100px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
 }
 
