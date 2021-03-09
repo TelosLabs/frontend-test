@@ -1,11 +1,13 @@
 window.onload = () => {
-    // save reference values for elements as variables to make future change easier
-    console.log("index.js called"); // TODO: Remove
-    const d = document;
-
-    // test DOM manip
-    const heroEl = document.getElementById("hero");
-    heroEl.classList.add("blue");
-
-    console.log(d);
+  const d = document;
+  const collapsibleTextDivs =  d.getElementsByClassName("collapsible-element");
+  for(const c of collapsibleTextDivs){
+    c.addEventListener('click', (e) => {
+        // TODO: I think this could be better
+        let arrow = c.getElementsByTagName("div")[0];
+        arrow.innerHTML = (arrow.innerHTML === "Λ") ? "v" : "Λ";
+        let pElement = c.getElementsByTagName("p")[0];
+        pElement.style.display = (pElement.style.display === "none") ? "block" : "none";
+    });
+  }
 };

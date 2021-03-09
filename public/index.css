@@ -1,21 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); /* roboto font from google cdn*/
-@import url("text-utility.css"); /* utility text classes */
-/* conditional styles */
-@import url("desktop.css") (min-width:376px);
-@import url("mobile.css");
-
+@import url("utility.css"); /* utility text classes */
 
 /*
 Content of the hero, sections and CTA should NOT be wider than 1312px (except for images on the CTA and bg colors)
 pad the remainder, design with 1312px as upper limit
 */
 
-/* font defaults */
+:root {
+  --text-light: #ffffff;
+  --text-dark: #000000;
+}
+
+/* defaults */
 body {
   font-family: Roboto;
   font-style: normal;
+  box-sizing: border-box;
 }
 
+/* the ball thing */
+.elipse {
+  background: #24404f;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* sections */
 #hero {
   background-color: #0b1113;
 }
@@ -24,20 +35,14 @@ body {
   background-color: #495664;
 }
 
-h2 {
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 60px;
-  letter-spacing: 0em;
-  color: #ffffff;
-}
+/* text */
+
 
 a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   /* identical to box height, or 150% */
-  color: #c4c4c4;
 }
 
 p {
@@ -47,4 +52,32 @@ p {
   letter-spacing: 0em;
 }
 
+h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+  /* identical to box height, or 125% */
+}
 
+/* On mobile h2 is centered */
+h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+}
+
+h5 {
+  
+}
