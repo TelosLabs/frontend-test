@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="./index.css" />
     <title>TEESH</title>
   </head>
-  <body class="grid-container">
-    <header>
+  <body>
+    <!-- TODO: Fix header to handoff (positioning) -->
+    <header class="header-container">
         <h5 class="uppercase top-bar-header">teesh</h5>
-        <div class="elipse"></div>
+        <div class="elipse top-bar-elipse"></div>
     </header>
-    <main id="main-content">
-      <section id="hero">
+
+    <main>
+
+      <!-- TODO: Fix hero to handoff (positioning, push photo down) -->
+      <section id="hero" class="grid-container">
         <div>
           <h1 class="text-light hero-header">Fulfill your most peculiar tea wishes.</h1>
           <p class="text-light">
@@ -25,16 +29,16 @@
           <button class="capitalize">signup</button>
         </div>
         <div>
-          <!-- TODO: adjust sizes -->
           <img
             src="./img/teacup-top(png).png"
             alt="teacup, book and herbs from a top view"
             class="hero-image"
-            width="500" height="600"
           />
         </div>
       </section>
-      <section id="ad-copy">
+
+      <!-- TODO: Fix ad-copy to handoff (positioning, articles to vert layout) -->
+      <section id="ad-copy" class="grid-container">
         <h2 class="capitalize">why us</h2>
         <article class="ad-copy-article">
           <div class="elipse"></div>
@@ -76,7 +80,8 @@
           </div>
         </article>
       </section>
-      <!-- TODO: Play with the grid, see if it can be generalized to all sections -->
+
+      <!-- TODO: Fix calltoaction to handoff (positioning,push photo down) -->
       <section id="cta" class="grid-container">
         <div class="grid-cell">
           <h2 class="uppercase text-light">sign up</h3>
@@ -93,6 +98,7 @@
             </picture>
         </div>
       </section>
+
     </main>
   </body>
 </html>

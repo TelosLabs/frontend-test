@@ -3,17 +3,57 @@ body {
   text-align: center;
 }
 
+/* Using the 12 col layout convention */
 .grid-container {
-    display: grid;
+  display: grid;
+  grid-template-columns: repeat(
+    12,
+    1fr
+  ); /* there's a fraction unit now, cool */
+  grid-template-rows: repeat(12, auto);
 }
 
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  align-content: center;
+  align-items: center;
+}
+/* to allow vertical alignment inside a grid container */
+/* height:100% */
+
 .top-bar-header {
+  grid-column-start: 1;
+  grid-column-end: 1;
   text-align: left;
+  
+  
+  height: 36px;
+  
+  margin: 0%;
+  padding: 18px;
+}
+
+
+.top-bar-elipse {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  position: absolute;
+  right: 18px;
+}
+
+.hero-header {
   /*
   position: absolute;
-  width: 77px;
-  height: 36px;
-  left: 18px;
-  top: 18px;
+  width: 327px;
+  height: 180px;
   */
+}
+
+/* TODO: Fine tune the layout for this image later, it was driving me nuts to constantly scroll around it */
+.hero-image {
+  border-radius: 4rem 4rem 0rem 0rem;
+  width: 20rem;
+  height: 20rem;
 }

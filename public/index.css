@@ -7,7 +7,7 @@ pad the remainder, design with 1312px as upper limit
 */
 
 :root {
-  --elipse-color: #24404f;
+  --elipse-color: #0B1113;
   --hero-color: #0b1113;
   --cta-color: #495664;
 }
@@ -15,8 +15,8 @@ pad the remainder, design with 1312px as upper limit
 /* the ball thing */
 .elipse {
   background: var(--elipse-color);
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
 }
 
