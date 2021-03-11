@@ -46,12 +46,12 @@ body {
 
 @media screen and (min-width: 376px) {
   .hero-text-container {
-    grid-column: 1 / 6;
+    grid-column: span 6;
     padding: 4px;
   }
   
   .hero-image-container {
-    grid-column: 7 / 13;
+    grid-column: span 6;
   }
 }
 
@@ -103,4 +103,22 @@ body {
 .cta-image {
   width: 100%;
   height: 55%;
+}
+
+@media screen and (min-width: 376px) {
+  .cta-text-container {
+    grid-column: span 6;
+    padding: 50px;
+  }
+  
+  .cta-image-container {
+    grid-column: span 6;
+    padding-top: 2rem;
+    align-self: center;
+  }
+
+  .cta-image {
+    width: 30rem;
+    height: 55%;
+  }
 }
