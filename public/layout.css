@@ -4,16 +4,6 @@ body {
   margin: 0%;
 }
 
-/* Using the 12 col layout convention */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(
-    12,
-    1fr
-  ); /* there's a fraction unit now, cool */
-  grid-template-rows: repeat(12, auto);
-}
-
 .header-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -21,21 +11,15 @@ body {
   align-content: center;
   align-items: center;
 }
-/* to allow vertical alignment inside a grid container */
-/* height:100% */
 
 .top-bar-header {
   grid-column-start: 1;
   grid-column-end: 1;
   text-align: left;
-  
-  
   height: 36px;
-  
   margin: 0%;
   padding: 18px;
 }
-
 
 .top-bar-elipse {
   grid-column-start: 3;
@@ -44,17 +28,25 @@ body {
   right: 18px;
 }
 
-.hero-header {
-  /*
-  position: absolute;
-  width: 327px;
-  height: 180px;
-  */
+/* Using the 12 col layout convention */
+.grid-container {
+  display: grid;
+  grid: auto-flow min-content / repeat(12, auto);
+}
+
+.hero-text-container {
+  grid-column: 1 / 13;
+  padding: 4px;
+}
+
+.hero-image-container {
+  grid-column: 1 / 13;
 }
 
 /* TODO: Fine tune the layout for this image later, it was driving me nuts to constantly scroll around it */
 .hero-image {
-  border-radius: 4rem 4rem 0rem 0rem;
+  border-radius: 1rem 1rem 0rem 0rem;
   width: 20rem;
   height: 20rem;
+  margin-top: 4rem;
 }

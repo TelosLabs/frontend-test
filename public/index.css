@@ -8,8 +8,10 @@ pad the remainder, design with 1312px as upper limit
 
 :root {
   --elipse-color: #0B1113;
-  --hero-color: #0b1113;
+  --hero-color: #0B1113;
   --cta-color: #495664;
+  --light-color: #FFFFFF;
+  --dark-color: #0B1113;
 }
 
 /* the ball thing */
@@ -27,4 +29,26 @@ pad the remainder, design with 1312px as upper limit
 
 #cta {
   background-color: var(--cta-color);
+}
+
+.fake-button {
+  padding: 0.5rem 3.5rem 0.5rem 3.5rem;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+
+.signup-light {
+  background-color: var(--light-color);
+  width: 193px;
+  height: 42px;
+
+}
+
+.signup-dark {
+  background-color: var(--dark-color);
+  width: 193px;
+  height: 42px;
 }
