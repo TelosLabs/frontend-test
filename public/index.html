@@ -10,38 +10,46 @@
     <title>TEESH</title>
   </head>
   <body>
-    <header>
-      <h5 class="uppercase">teesh</h5>
-      <div class="elipse"></div>
+    <!-- TODO: Fix header to handoff (positioning) -->
+    <header class="header-container">
+        <h5 class="uppercase top-bar-header">teesh</h5>
+        <div class="top-bar-elipse"></div>
     </header>
-    <main id="main-content">
-      <section id="hero">
-        <div>
-          <h1 class="text-light">Fulfill your most peculiar tea wishes.</h1>
-          <p class="text-light">
+
+    <main>
+
+      <!-- TODO: Fix hero to handoff (positioning, push photo down) -->
+      <section id="hero" class="grid-container">
+
+        <div class="hero-text-container">
+          <h1 class="text-light hero-header">Fulfill your most peculiar tea wishes.</h1>
+          <h3 class="text-light">
             From a common black tea to the rarest Da Hong Pao, each of them
-            delivered right at your door
-          </p>
-          <button class="capitalize">signup</button>
+            delivered right at your door.
+          </h3>
+          <br>
+          <a class="fake-button text-dark signup-light">Sign up</a>
+          <br>
         </div>
-        <div>
-          <!-- TODO: adjust sizes -->
+
+        <div class="hero-image-container">
           <img
             src="./img/teacup-top(png).png"
             alt="teacup, book and herbs from a top view"
             class="hero-image"
-            width="500" height="600"
           />
         </div>
       </section>
-      <section id="ad-copy">
-        <h2 class="capitalize text-center">why us</h2>
-        <article class="ad-copy-article">
+
+      <!-- TODO: Fix ad-copy to handoff (positioning, articles to vert layout) -->
+      <section id="ad-copy" class="grid-container">
+        <h2 class="capitalize adcopy-header">why us</h2>
+        <article class="adcopy-article grid-container">
           <div class="elipse"></div>
           <h3 class="capitalize">home delivery</h3>
           <div class="collapsible-element">
             <div class="arrow">Λ</div> 
-            <p class="text-center">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
               quisquam veniam! Eos laborum rem possimus, fugit totam minima
               voluptate facilis nihil harum saepe similique, cum dolore sapiente
@@ -49,12 +57,12 @@
             </p>
           </div>
         </article>
-        <article class="ad-copy-article">
+        <article class="adcopy-article grid-container">
           <div class="elipse"></div>
           <h3 class="capitalize">tea personalization</h3>
           <div class="collapsible-element">
             <div class="arrow">Λ</div> 
-            <p class="text-center">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
               quisquam veniam! Eos laborum rem possimus, fugit totam minima
               voluptate facilis nihil harum saepe similique, cum dolore sapiente
@@ -62,12 +70,12 @@
             </p>
           </div>
         </article>
-        <article class="ad-copy-article">
+        <article class="adcopy-article grid-container">
           <div class="elipse"></div>
           <h3 class="capitalize">premium quality</h3>
           <div class="collapsible-element">
             <div class="arrow">Λ</div> 
-            <p class="text-center">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
               quisquam veniam! Eos laborum rem possimus, fugit totam minima
               voluptate facilis nihil harum saepe similique, cum dolore sapiente
@@ -76,23 +84,22 @@
           </div>
         </article>
       </section>
-      <!-- TODO: Play with the grid, see if it can be generalized to all sections -->
+
+      <!-- TODO: Fix calltoaction to handoff (positioning,push photo down) -->
       <section id="cta" class="grid-container">
-        <div class="grid-cell">
+        <div class="cta-text-container">
           <h2 class="uppercase text-light">sign up</h3>
           <h3 class="text-light">
-            Get the best tea experience you'll ever taste right at your door
-            each month
+            Get the best tea experience you’ll be ever taste right at your door each month
           </h3>
-          <button class="capitalize">signup</button>
+          <a class="fake-button text-light signup-dark">Sign up</a>
         </div>
-        <div class="grid-cell">
-            <picture>
-                <source media="(min-width:900px)" type="image/jpeg" srcset="./img/cup-and-kettle(XL,L).jpg">
-                <img src="./img/cup-and-kettle(M,SM,XS).jpg" alt="cup and kettle">
-            </picture>
-        </div>
+        <picture class="cta-image-container">
+            <source media="(min-width:900px)" type="image/jpeg" srcset="./img/cup-and-kettle(XL,L).jpg">
+            <img class="cta-image" src="./img/cup-and-kettle(M,SM,XS).jpg" alt="cup and kettle">
+        </picture>
       </section>
+
     </main>
   </body>
 </html>

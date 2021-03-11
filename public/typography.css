@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap"); */
+
+:root {
+  --text-light: #ffffff;
+  --text-dark: #000000;
+  --text-dark-special: #0b1113;
+}
+
+body {
+  font-family: Roboto;
+  font-style: normal;
+}
+
+.hero-header {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+  /* identical to box height, or 125% */
+  color: var(--text-light);
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+}
+
+/* TODO: Might need to class this, depending on what I find out on desktop ver */
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+}
+
+.top-bar-header {
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+  color: var(--text-dark-special);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+/* text utilities */
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-dark {
+  color: var(--text-dark);
+}
