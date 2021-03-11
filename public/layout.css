@@ -44,6 +44,17 @@ body {
   grid-column: 1 / 13;
 }
 
+@media screen and (min-width: 376px) {
+  .hero-text-container {
+    grid-column: span 6;
+    padding: 4px;
+  }
+  
+  .hero-image-container {
+    grid-column: span 6;
+  }
+}
+
 /* TODO: Fine tune the layout for this image later, it was driving me nuts to constantly scroll around it */
 .hero-image {
   border-radius: 1rem 1rem 0rem 0rem;
@@ -92,4 +103,22 @@ body {
 .cta-image {
   width: 100%;
   height: 55%;
+}
+
+@media screen and (min-width: 376px) {
+  .cta-text-container {
+    grid-column: span 6;
+    padding: 50px;
+  }
+  
+  .cta-image-container {
+    grid-column: span 6;
+    padding-top: 2rem;
+    align-self: center;
+  }
+
+  .cta-image {
+    width: 30rem;
+    height: 55%;
+  }
 }
