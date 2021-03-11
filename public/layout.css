@@ -80,11 +80,12 @@ body {
 /* call to action section */
 .cta-text-container {
   grid-column: span 12;
+  padding: 50px;
 }
 
 .cta-image-container {
   grid-column: span 12;
-  padding-top: 4rem;
+  padding-top: 2rem;
   align-self: center;
 }
 
