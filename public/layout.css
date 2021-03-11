@@ -32,7 +32,7 @@ body {
 /* Using the 12 col layout convention */
 .grid-container {
   display: grid;
-  grid: auto-flow min-content / repeat(12, auto);
+  grid: auto-flow auto / repeat(12, auto);
 }
 
 .hero-text-container {
@@ -107,18 +107,17 @@ body {
 
 @media screen and (min-width: 376px) {
   .cta-text-container {
-    grid-column: span 6;
+    grid-column: span 3;
     padding: 50px;
+    text-align: left;
   }
   
   .cta-image-container {
-    grid-column: span 6;
-    padding-top: 2rem;
-    align-self: center;
+    grid-column: span 9;
   }
 
   .cta-image {
-    width: 30rem;
+    width: 45rem;
     height: 55%;
   }
 }
