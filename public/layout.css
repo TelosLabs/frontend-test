@@ -77,4 +77,16 @@ body {
 }
 
 /* call to action section */
+.cta-text-container {
+  grid-column: span 12;
+}
 
+.cta-image-container {
+  grid-column: span 12;
+}
+
+.cta-image {
+  width: 100%;
+  height: 55%;
+  margin-top: 6rem;
+}
