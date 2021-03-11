@@ -38,6 +38,7 @@ body {
 .hero-text-container {
   grid-column: 1 / 13;
   padding: 4px;
+  text-align: left;
 }
 
 .hero-image-container {
