@@ -88,6 +88,10 @@ body {
   margin-top: 5rem;
 }
 
+.hide {
+  visibility: hidden;
+}
+
 /* call to action section */
 .cta-text-container {
   grid-column: span 12;
