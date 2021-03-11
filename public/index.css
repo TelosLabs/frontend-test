@@ -7,19 +7,29 @@ pad the remainder, design with 1312px as upper limit
 */
 
 :root {
-  --elipse-color: #0B1113;
-  --hero-color: #0B1113;
+  --top-elipse-color: #0b1113;
+  --elipse-color: #24404f;
+  --hero-color: #0b1113;
   --cta-color: #495664;
-  --light-color: #FFFFFF;
-  --dark-color: #0B1113;
+  --light-color: #ffffff;
+  --dark-color: #0b1113;
+}
+
+.top-bar-elipse {
+  background: var(--top-elipse-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
 }
 
 /* the ball thing */
 .elipse {
   background: var(--elipse-color);
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
+  grid-column-start: 6;
+  grid-column-end: 7;
 }
 
 /* sections */
@@ -33,18 +43,16 @@ pad the remainder, design with 1312px as upper limit
 
 .fake-button {
   padding: 0.5rem 3.5rem 0.5rem 3.5rem;
-  border-top: 1px solid #CCCCCC;
+  border-top: 1px solid #cccccc;
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+  border-left: 1px solid #cccccc;
 }
-
 
 .signup-light {
   background-color: var(--light-color);
   width: 193px;
   height: 42px;
-
 }
 
 .signup-dark {
