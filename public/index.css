@@ -28,8 +28,6 @@ pad the remainder, design with 1312px as upper limit
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  grid-column-start: 6;
-  grid-column-end: 7;
 }
 
 /* sections */
