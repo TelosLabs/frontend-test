@@ -50,3 +50,18 @@ body {
   height: 20rem;
   margin-top: 4rem;
 }
+
+/* ad copy section (Why us)*/
+.adcopy-header {
+  grid-column: span 12;
+}
+
+.adcopy-article {
+  grid-column: span 12;
+}
+
+@media screen and (min-width: 376px) {
+  .adcopy-article {
+    grid-column: span 4;
+  }
+}
